@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# CSS Framework - React-Bootstrap
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What are we learning today?
+- 1.Create a react project
+    -create-react-app
+    -cleaned up
+    -** incorporate a CSS Framework - react-bootstrap
+    -CDN -> index.html
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+  />
+- 2.What is a CSS Framework?
+    ** A collection of pre-built stylesheets
 
-## Available Scripts
+    -React-bootstrap:
 
-In the project directory, you can run:
+    - They can have components [import]
+        -Button, navbars, cards [A lot of these components have pre-fixed styling so all the heavy lifting is done for you, you dont have to write the styles from scratch]
 
-### `npm start`
+        import nameOfComponent from 'react-bootstrap/nameOfComponent'
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    - classname based CSS framework: [no need to import into component]
+     - you can add a specific class, the class has pre-written css.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+    - Why use a CSS Framework?
+    - Makes styling a lot more efficient
+    - 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 3. Demo - React-bootstrap Grid 
+ * Grid - divides your screen into 12 parts
 
-### `npm run build`
+ -Use Container - Row - Col 
+    -To demonstrate the behavior of the 12 unit grid system.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    -Container- react bootstrap component that provides a means to center and horizontally pad your content. Use a container for a responsive width.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    Grid - The grid system is divided into 12 and depending on a specified width (determined by sm / md / lg / xl), the responsiveness of the grid system will adjust accordingly.
 
-### `npm run eject`
+    Take aways:
+        - 12 unit system
+        - the size properties determin the breakpoints [responsiveness]
+        - the values given within the size property determines n/12 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- 4. Demo - React-bootstrap components
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Make sure we import them into our react component.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
